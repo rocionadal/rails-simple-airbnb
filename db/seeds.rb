@@ -10,19 +10,22 @@ Flat.create!(
   address: '10 Clifton Gardens London W9 1DT',
   description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory.',
   price_per_night: 75,
-  number_of_guests: 3
+  number_of_guests: 3,
+  image_url: "https://images.unsplash.com/photo-1575517112311-c371a9d614a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
 )
 Flat.create!(
   name: 'St Pancras Clock Tower Guest Suite',
   address: 'Euston Rd London N1C 4QP',
   description: 'A mini apartment within the clock tower apartment at St Pancras Station, with its own en suite bathroom and kitchen and sitting area.',
   price_per_night: 110,
-  number_of_guests: 2
+  number_of_guests: 2,
+  image_url: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
 )
 Flat.create!(
   name: 'Stylish House Close to River Thamesss',
   address: '5 Queensmill Road London SW6 6JP',
   description: 'Lovely warm comfortable and stylishly furnished house. Private bedroom and bathroom with shared living areas.',
   price_per_night: 65,
-  number_of_guests: 2
+  number_of_guests: 2,
+  image_url: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
 )
