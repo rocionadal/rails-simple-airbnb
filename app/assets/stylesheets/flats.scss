@@ -13,3 +13,9 @@
 .image_index {
   height: 300px;
 }
+
+.img-fluid {
+  width: -webkit-fill-available;
+  height: 100px;
+  object-fit: cover;
+}
