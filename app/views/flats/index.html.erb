@@ -1,9 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
   <a class="navbar-brand" href="#">Simple Airbnb</a>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Search</button>
+      <%= link_to 'Add flat', new_flat_path, :class => "btn btn-outline-primary" %>
     </form>
   </div>
 </nav>
@@ -12,12 +13,20 @@
   <h1>All our Flats</h1>
   <div class="d-flex">
     <% @flats.each do |flat| %>
-      <div class="card m-3">
-        <h1><%= flat.name %></h1>
-        <p><%= flat.address %></p>
-        <div class="d-flex justify-content-between">
-          <p><%= flat.price_per_night %></p>
-          <p><%= flat.number_of_guests %></p>
+      <div class="card mr-4">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Card image cap">
+        <div class="container bg-light pt-3">
+          <h5 class=""><%= flat.name %></h5>
+          <p><%= flat.address %></p>
+          <div class="d-flex">
+            <p><i class="fas fa-user-friends mr-1"></i><%=  flat.price_per_night %></p>
+            <p><i class="fas fa-euro-sign ml-3 mr-1"></i><%= flat.number_of_guests %></p>
+          </div>
+        </div>
+        <div class="d-flex p-3 links">
+          <%= link_to 'More info', flat_path(flat) %>
+          <%= link_to 'Edit', edit_flat_path(flat) %>
+          <%= link_to 'Remove', flat_path(flat), method: :delete %>
         </div>
       </div>
     <% end %>

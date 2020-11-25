@@ -1,0 +1,13 @@
+<div class="container p-3">
+  <h1>Edit flat</h1>
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :price_per_night %>
+    <%= f.submit "Update flat", :class => "btn btn-primary" %>
+  <% end %>
+  <p class="btn btn-danger"><%= link_to 'Cancel', flats_path %></p>
+
+</div>
