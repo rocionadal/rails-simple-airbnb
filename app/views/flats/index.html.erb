@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Simple Airbnb</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container p-3">
+  <h1>All our Flats</h1>
+  <div class="d-flex">
+    <% @flats.each do |flat| %>
+      <div class="card m-3">
+        <h1><%= flat.name %></h1>
+        <p><%= flat.address %></p>
+        <div class="d-flex justify-content-between">
+          <p><%= flat.price_per_night %></p>
+          <p><%= flat.number_of_guests %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
