@@ -1,34 +1,44 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
 @import "bootstrap/scss/bootstrap";
 
-// @media (min-width: 700px) and (max-width: 900px) {
-//   .main_card {
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+// .cards {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-template-rows: 1fr;
+//   grid-column-gap: 10px;
+//   grid-row-gap: 0px;
+//   margin-top: 20px;
 // }
 
-// @media (min-width: 500px) and (max-width: 700px) {
-//   .main_card {
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
+.links a {
+  margin-right: 16px;
+}
 
-// @media (min-width: 0) and (max-width: 500px) {
-//   .main_card {
-//     grid-template-columns: 1fr;
-//   }
-// }
+.main_card {
+  height: auto;
+}
+
+.image_index {
+  height: 300px;
+}
+
+.img-fluid {
+  width: -webkit-fill-available;
+  height: 100px;
+  object-fit: cover;
+}
+
+.banner {
+  height: 40vh;
+  object-fit: cover;
+  background-position: center;
+}
