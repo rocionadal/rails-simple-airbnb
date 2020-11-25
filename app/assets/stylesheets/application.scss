@@ -14,3 +14,21 @@
  *= require_self
  */
 @import "bootstrap/scss/bootstrap";
+
+// @media (min-width: 700px) and (max-width: 900px) {
+//   .main_card {
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+// }
+
+// @media (min-width: 500px) and (max-width: 700px) {
+//   .main_card {
+//     grid-template-columns: 1fr 1fr;
+//   }
+// }
+
+// @media (min-width: 0) and (max-width: 500px) {
+//   .main_card {
+//     grid-template-columns: 1fr;
+//   }
+// }
