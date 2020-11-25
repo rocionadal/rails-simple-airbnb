@@ -9,13 +9,13 @@
   </div>
 </nav>
 
-<div class="container p-3">
-  <h1>All our Flats</h1>
+<div class="container-fluid">
+  <h1 style="padding-left: 1.2em;" class="pt-3">Flats available</h1>
   <div class="d-flex cards">
     <% @flats.each do |flat| %>
-      <div class="card mr-4 main_card" >
+      <div class="card mb-2 mr-4 main_card" >
         <img src="<%= flat.image_url %>" class="image_index">
-        <div class="container bg-light pt-3 h-75">
+        <div class="container-fluid bg-light pt-3 h-75">
           <h5 class=""><%= flat.name %></h5>
           <p><%= flat.address %></p>
           <div class="d-flex">

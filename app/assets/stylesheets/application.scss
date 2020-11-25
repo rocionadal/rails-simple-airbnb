@@ -10,21 +10,20 @@
 @import "components/index";
 @import "pages/index";
 
-// .cards {
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   grid-template-rows: 1fr;
-//   grid-column-gap: 10px;
-//   grid-row-gap: 0px;
-//   margin-top: 20px;
-// }
+.cards {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3em;
+}
 
 .links a {
   margin-right: 16px;
 }
 
-.main_card {
+.card {
   height: auto;
+  width: 385px;
 }
 
 .image_index {
@@ -43,3 +42,4 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
